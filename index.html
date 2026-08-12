@@ -15,13 +15,24 @@
   <meta property="og:url" content="https://edu.hellsec.dev/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#08111f" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2308111f'/%3E%3Cpath d='M16 42V22h32v20H16Zm6-6h20v-8H22v8Z' fill='%2338bdf8'/%3E%3Ccircle cx='48' cy='20' r='5' fill='%2322c55e'/%3E%3C/svg%3E" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="site-bg" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+    <span class="grid-layer"></span>
+  </div>
+
   <header class="site-header" id="top">
     <nav class="nav" aria-label="ניווט ראשי">
-      <a class="brand" href="#top" aria-label="HellSec Edu"><span class="brand-mark">HS</span><span>HellSec Edu</span></a>
+      <a class="brand" href="#top" aria-label="HellSec Edu">
+        <img src="assets/hellsec-logo.png" alt="" class="brand-logo" />
+        <span><strong>HellSec</strong> Edu</span>
+      </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">תפריט</button>
       <div class="nav-links" id="nav-links">
         <a href="#value">למה עכשיו</a>
@@ -35,8 +46,8 @@
 
   <main>
     <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">הצעת תוכנית לבית ספר</p>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> הצעת תוכנית לבית ספר</p>
         <h1>פיתוח אתרים עם AI לתלמידי תיכון</h1>
         <p class="lead">תוכנית מעשית לתלמידי כיתות י׳–י״ב: שימוש אחראי ב־AI, בניית אתר אישי, שמירת קוד ב־GitHub ופרסום בחינם באמצעות GitHub Pages.</p>
         <div class="hero-actions">
@@ -49,32 +60,37 @@
           <div><dt>פרסום</dt><dd>GitHub Pages</dd></div>
         </dl>
       </div>
-      <div class="hero-visual"><img src="assets/ai-school-banner.png" alt="תלמידים, קוד ו־AI בסביבת לימוד טכנולוגית" /></div>
-    </section>
-
-    <section class="section intro" id="value">
-      <div class="section-heading"><p class="eyebrow">למה זה חשוב</p><h2>AI כבר משנה את הדרך שבה תלמידים לומדים ויוצרים</h2></div>
-      <div class="cards four">
-        <article class="card"><h3>חדשנות לבית הספר</h3><p>תוכנית רלוונטית לעולם העבודה העתידי, עם תוצר אמיתי שאפשר להציג לתלמידים, הורים וצוות חינוכי.</p></article>
-        <article class="card"><h3>למידה דרך עשייה</h3><p>התלמידים לא רק שומעים על AI. הם בונים אתר, בודקים קוד, מתקנים ומשפרים.</p></article>
-        <article class="card"><h3>אחריות דיגיטלית</h3><p>שימוש ב־AI ככלי עזר, תוך בדיקה, הבנה, פרטיות וחשיבה עצמאית.</p></article>
-        <article class="card"><h3>פיילוט פשוט</h3><p>אפשר להתחיל בסדנה חד־פעמית לקבוצה אחת, ואז להחליט האם להרחיב לקורס מלא.</p></article>
+      <div class="hero-visual reveal" data-tilt>
+        <img src="assets/ai-school-banner.png" alt="תלמידים, קוד ו־AI בסביבת לימוד טכנולוגית" />
+        <div class="floating-card code-card one" aria-hidden="true"><b>&lt;/&gt;</b><span>HTML · CSS · JS</span></div>
+        <div class="floating-card code-card two" aria-hidden="true"><b>AI</b><span>Prompt → Code → Publish</span></div>
+        <div class="scan-line" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section class="section split"><div><p class="eyebrow">למי זה מתאים</p><h2>לתלמידי תיכון שרוצים להפוך רעיון לפרויקט דיגיטלי</h2><p>התוכנית מיועדת לכיתות י׳–י״ב ומתאימה גם לתלמידים ללא ניסיון קודם בתכנות.</p></div><ul class="check-list"><li>מגמות טכנולוגיות ותוכניות העשרה</li><li>כיתות מצוינות וימי שיא טכנולוגיים</li><li>קבוצות תלמידים שרוצות לבנות פרויקט אמיתי</li><li>בתי ספר שרוצים להכניס AI בצורה בטוחה ומעשית</li></ul></section>
+    <section class="section intro reveal" id="value">
+      <div class="section-heading"><p class="eyebrow"><span></span> למה זה חשוב</p><h2>AI כבר משנה את הדרך שבה תלמידים לומדים ויוצרים</h2></div>
+      <div class="cards four">
+        <article class="card interactive"><h3>חדשנות לבית הספר</h3><p>תוכנית רלוונטית לעולם העבודה העתידי, עם תוצר אמיתי שאפשר להציג לתלמידים, הורים וצוות חינוכי.</p></article>
+        <article class="card interactive"><h3>למידה דרך עשייה</h3><p>התלמידים לא רק שומעים על AI. הם בונים אתר, בודקים קוד, מתקנים ומשפרים.</p></article>
+        <article class="card interactive"><h3>אחריות דיגיטלית</h3><p>שימוש ב־AI ככלי עזר, תוך בדיקה, הבנה, פרטיות וחשיבה עצמאית.</p></article>
+        <article class="card interactive"><h3>פיילוט פשוט</h3><p>אפשר להתחיל בסדנה חד־פעמית לקבוצה אחת, ואז להחליט האם להרחיב לקורס מלא.</p></article>
+      </div>
+    </section>
 
-    <section class="section outcomes"><div class="section-heading"><p class="eyebrow">מה התלמידים יקבלו</p><h2>תוצר אישי, קוד מסודר וקישור ציבורי</h2></div><div class="outcome-grid"><div class="outcome"><span>01</span><h3>רעיון ותכנון</h3><p>בחירת נושא, קהל יעד ותוכן ראשוני לאתר.</p></div><div class="outcome"><span>02</span><h3>פיתוח Web</h3><p>HTML, CSS ו־JavaScript בסיסי לבניית אתר ראשון.</p></div><div class="outcome"><span>03</span><h3>עבודה עם AI</h3><p>ניסוח בקשות ברורות, בדיקת תשובות ותיקון שגיאות.</p></div><div class="outcome"><span>04</span><h3>פרסום</h3><p>שמירת קוד ב־GitHub ופרסום האתר דרך GitHub Pages.</p></div></div></section>
+    <section class="section split reveal"><div><p class="eyebrow"><span></span> למי זה מתאים</p><h2>לתלמידי תיכון שרוצים להפוך רעיון לפרויקט דיגיטלי</h2><p>התוכנית מיועדת לכיתות י׳–י״ב ומתאימה גם לתלמידים ללא ניסיון קודם בתכנות.</p></div><ul class="check-list"><li>מגמות טכנולוגיות ותוכניות העשרה</li><li>כיתות מצוינות וימי שיא טכנולוגיים</li><li>קבוצות תלמידים שרוצות לבנות פרויקט אמיתי</li><li>בתי ספר שרוצים להכניס AI בצורה בטוחה ומעשית</li></ul></section>
 
-    <section class="section program" id="program"><div class="section-heading"><p class="eyebrow">מבנה התוכנית</p><h2>שלושה פורמטים לבחירה</h2></div><div class="pricing-like"><article class="plan featured"><p class="plan-label">אפשרות א׳</p><h3>סדנת פיילוט חד־פעמית</h3><p class="duration">2–3 שעות</p><p>מתאים לבית ספר שרוצה לבדוק את התוכנית בצורה קצרה ומעשית.</p><ul><li>היכרות עם AI ופיתוח</li><li>בניית דף אישי בסיסי</li><li>היכרות עם GitHub Pages</li></ul></article><article class="plan"><p class="plan-label">אפשרות ב׳</p><h3>קורס קצר</h3><p class="duration">4 מפגשים</p><p>מתאים לקבוצה שרוצה להגיע לתוצר אישי ברור בזמן קצר.</p><ul><li>AI ורעיון לפרויקט</li><li>HTML + CSS</li><li>שיפור ותיקון עם AI</li><li>פרסום והצגת תוצרים</li></ul></article><article class="plan"><p class="plan-label">אפשרות ג׳</p><h3>קורס מלא</h3><p class="duration">8 מפגשים</p><p>מתאים לבית ספר שרוצה תהליך עמוק יותר ותוצרים איכותיים יותר.</p><ul><li>HTML, CSS ו־JavaScript</li><li>בקשות נכונות ועבודה עם AI</li><li>GitHub ו־GitHub Pages</li><li>בדיקה, שיפור והצגת פרויקטים</li></ul></article></div></section>
+    <section class="section outcomes reveal"><div class="section-heading"><p class="eyebrow"><span></span> מה התלמידים יקבלו</p><h2>תוצר אישי, קוד מסודר וקישור ציבורי</h2></div><div class="outcome-grid"><div class="outcome interactive"><span>01</span><h3>רעיון ותכנון</h3><p>בחירת נושא, קהל יעד ותוכן ראשוני לאתר.</p></div><div class="outcome interactive"><span>02</span><h3>פיתוח Web</h3><p>HTML, CSS ו־JavaScript בסיסי לבניית אתר ראשון.</p></div><div class="outcome interactive"><span>03</span><h3>עבודה עם AI</h3><p>ניסוח בקשות ברורות, בדיקת תשובות ותיקון שגיאות.</p></div><div class="outcome interactive"><span>04</span><h3>פרסום</h3><p>שמירת קוד ב־GitHub ופרסום האתר דרך GitHub Pages.</p></div></div></section>
 
-    <section class="section syllabus"><div class="section-heading"><p class="eyebrow">סילבוס מקוצר</p><h2>מה לומדים במפגשים</h2></div><div class="timeline"><div><span>AI</span><p>מהו AI, איך משתמשים בו נכון, ומה הסיכונים בהסתמכות עיוורת.</p></div><div><span>רעיון</span><p>בחירת נושא, קהל יעד ותוכן ראשוני לפרויקט.</p></div><div><span>HTML</span><p>מבנה עמוד, כותרות, טקסטים, תמונות וקישורים.</p></div><div><span>CSS</span><p>צבעים, פונטים, כפתורים, כרטיסיות והתאמה למובייל.</p></div><div><span>JS</span><p>אינטראקציה בסיסית באתר: כפתור, שינוי תוכן או פעולה קטנה.</p></div><div><span>Publish</span><p>שמירת קוד ב־GitHub ופרסום האתר באמצעות GitHub Pages.</p></div></div></section>
+    <section class="section program reveal" id="program"><div class="section-heading"><p class="eyebrow"><span></span> מבנה התוכנית</p><h2>שלושה פורמטים לבחירה</h2></div><div class="pricing-like"><article class="plan featured interactive"><p class="plan-label">אפשרות א׳</p><h3>סדנת פיילוט חד־פעמית</h3><p class="duration">2–3 שעות</p><p>מתאים לבית ספר שרוצה לבדוק את התוכנית בצורה קצרה ומעשית.</p><ul><li>היכרות עם AI ופיתוח</li><li>בניית דף אישי בסיסי</li><li>היכרות עם GitHub Pages</li></ul></article><article class="plan interactive"><p class="plan-label">אפשרות ב׳</p><h3>קורס קצר</h3><p class="duration">4 מפגשים</p><p>מתאים לקבוצה שרוצה להגיע לתוצר אישי ברור בזמן קצר.</p><ul><li>AI ורעיון לפרויקט</li><li>HTML + CSS</li><li>שיפור ותיקון עם AI</li><li>פרסום והצגת תוצרים</li></ul></article><article class="plan interactive"><p class="plan-label">אפשרות ג׳</p><h3>קורס מלא</h3><p class="duration">8 מפגשים</p><p>מתאים לבית ספר שרוצה תהליך עמוק יותר ותוצרים איכותיים יותר.</p><ul><li>HTML, CSS ו־JavaScript</li><li>בקשות נכונות ועבודה עם AI</li><li>GitHub ו־GitHub Pages</li><li>בדיקה, שיפור והצגת פרויקטים</li></ul></article></div></section>
 
-    <section class="section safety" id="safety"><div class="section-heading"><p class="eyebrow">אחריות ובטיחות</p><h2>AI ככלי למידה, לא תחליף לחשיבה</h2></div><div class="split compact"><ul class="check-list"><li>לא מפרסמים מידע אישי רגיש של תלמידים.</li><li>שימוש ב־GitHub ובכלי AI לפי מדיניות בית הספר.</li><li>התלמידים לומדים לבדוק את תשובות ה־AI.</li><li>הדגש הוא הבנה, הסבר ותוצר שהתלמיד יודע להציג.</li></ul><div class="note"><h3>מה בית הספר צריך להכין?</h3><p>כיתה עם מחשבים, אינטרנט יציב, מקרן, אישור שימוש בכלי AI/GitHub, רשימת תלמידים ואיש קשר מטעם בית הספר.</p></div></div></section>
+    <section class="section syllabus reveal"><div class="section-heading"><p class="eyebrow"><span></span> סילבוס מקוצר</p><h2>מה לומדים במפגשים</h2></div><div class="timeline"><div><span>AI</span><p>מהו AI, איך משתמשים בו נכון, ומה הסיכונים בהסתמכות עיוורת.</p></div><div><span>רעיון</span><p>בחירת נושא, קהל יעד ותוכן ראשוני לפרויקט.</p></div><div><span>HTML</span><p>מבנה עמוד, כותרות, טקסטים, תמונות וקישורים.</p></div><div><span>CSS</span><p>צבעים, פונטים, כפתורים, כרטיסיות והתאמה למובייל.</p></div><div><span>JS</span><p>אינטראקציה בסיסית באתר: כפתור, שינוי תוכן או פעולה קטנה.</p></div><div><span>Publish</span><p>שמירת קוד ב־GitHub ופרסום האתר באמצעות GitHub Pages.</p></div></div></section>
 
-    <section class="section instructor" id="instructor"><div class="instructor-card"><div class="avatar">VB</div><div><p class="eyebrow">מנחה התוכנית</p><h2>ולדימיר ברסון</h2><p>איש טכנולוגיה, פיתוח תוכנה, AI, סייבר ואוטומציה עסקית. התוכנית מועברת בגישה מעשית: מהרעיון הראשוני, דרך כתיבת הקוד והבנתו, ועד פרסום התוצר באינטרנט.</p><p>הדגש הוא על שימוש אחראי ב־AI, הבנה אמיתית של העבודה ותוצר שכל תלמיד יכול לפרסם ולהציג.</p></div></div></section>
+    <section class="section safety reveal" id="safety"><div class="section-heading"><p class="eyebrow"><span></span> אחריות ובטיחות</p><h2>AI ככלי למידה, לא תחליף לחשיבה</h2></div><div class="split compact"><ul class="check-list"><li>לא מפרסמים מידע אישי רגיש של תלמידים.</li><li>שימוש ב־GitHub ובכלי AI לפי מדיניות בית הספר.</li><li>התלמידים לומדים לבדוק את תשובות ה־AI.</li><li>הדגש הוא הבנה, הסבר ותוצר שהתלמיד יודע להציג.</li></ul><div class="note interactive"><h3>מה בית הספר צריך להכין?</h3><p>כיתה עם מחשבים, אינטרנט יציב, מקרן, אישור שימוש בכלי AI/GitHub, רשימת תלמידים ואיש קשר מטעם בית הספר.</p></div></div></section>
 
-    <section class="section cta" id="contact"><p class="eyebrow">השלב הבא</p><h2>להתחיל בפיילוט לקבוצה אחת</h2><p>ההמלצה היא להתחיל בסדנת פיילוט חד־פעמית, להציג את התוצרים, לקבל משוב מהתלמידים ומהצוות, ואז להחליט האם להרחיב לקורס קצר או מלא.</p><div class="hero-actions center"><a class="btn primary" href="https://docs.google.com/document/d/1EJTKP4n1wqWLeG4x6o3fUcMZ7uQS6Tdynhmcd4_edeU/edit" target="_blank" rel="noopener">צפייה במסמך המלא</a><a class="btn secondary" href="https://hellsec.dev/" target="_blank" rel="noopener">HellSec</a></div></section>
+    <section class="section instructor reveal" id="instructor"><div class="instructor-card interactive"><img src="assets/hellsec-logo.png" alt="HellSec" class="instructor-logo" /><div><p class="eyebrow"><span></span> מנחה התוכנית</p><h2>ולדימיר ברסון</h2><p>איש טכנולוגיה, פיתוח תוכנה, AI, סייבר ואוטומציה עסקית. התוכנית מועברת בגישה מעשית: מהרעיון הראשוני, דרך כתיבת הקוד והבנתו, ועד פרסום התוצר באינטרנט.</p><p>הדגש הוא על שימוש אחראי ב־AI, הבנה אמיתית של העבודה ותוצר שכל תלמיד יכול לפרסם ולהציג.</p></div></div></section>
+
+    <section class="section cta reveal" id="contact"><p class="eyebrow"><span></span> השלב הבא</p><h2>להתחיל בפיילוט לקבוצה אחת</h2><p>ההמלצה היא להתחיל בסדנת פיילוט חד־פעמית, להציג את התוצרים, לקבל משוב מהתלמידים ומהצוות, ואז להחליט האם להרחיב לקורס קצר או מלא.</p><div class="hero-actions center"><a class="btn primary" href="https://docs.google.com/document/d/1EJTKP4n1wqWLeG4x6o3fUcMZ7uQS6Tdynhmcd4_edeU/edit" target="_blank" rel="noopener">צפייה במסמך המלא</a><a class="btn secondary" href="https://hellsec.dev/" target="_blank" rel="noopener">HellSec</a></div></section>
   </main>
   <footer class="footer"><p>HellSec Edu · פיתוח אתרים עם AI לתלמידי תיכון</p><a href="#top">חזרה למעלה</a></footer>
   <script src="script.js"></script>
