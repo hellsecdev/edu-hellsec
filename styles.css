@@ -504,3 +504,117 @@ body.is-ltr .trust-row li{font-size:.74rem}
   .lang-switch button{height:28px!important;min-width:31px!important;padding:0 8px!important;font-size:.68rem!important}
   .nav-scrolled .site-header .nav{height:58px!important;min-height:58px!important;max-height:58px!important}
 }
+
+
+/* Premium hero fit pass: safe fixed-nav spacing, no clipped multilingual copy */
+@media (min-width:1081px){
+  main{padding-top:122px!important}
+  .hero.section{
+    margin-top:10px!important;
+    padding:28px!important;
+    gap:18px!important;
+    overflow:visible!important;
+  }
+  .hero.section:before{overflow:hidden!important}
+  .hero-copy,
+  .hero-visual{
+    height:408px!important;
+    min-height:408px!important;
+    border-radius:30px!important;
+  }
+  .hero-copy{
+    padding:30px 34px 28px!important;
+    justify-content:flex-start!important;
+    overflow:hidden!important;
+  }
+  .hero-copy h1{
+    font-size:clamp(3.08rem,4.08vw,4.42rem)!important;
+    line-height:.985!important;
+    letter-spacing:-.052em!important;
+    margin:0 0 16px!important;
+    max-width:610px!important;
+    text-wrap:balance!important;
+  }
+  html[lang="ru"] .hero-copy h1{
+    font-size:clamp(2.74rem,3.54vw,3.92rem)!important;
+    line-height:1.02!important;
+    letter-spacing:-.048em!important;
+    max-width:600px!important;
+  }
+  html[lang="en"] .hero-copy h1{
+    font-size:clamp(2.92rem,3.82vw,4.12rem)!important;
+    line-height:1.0!important;
+    max-width:570px!important;
+  }
+  html[lang="he"] .hero-copy h1{
+    font-size:clamp(3.35rem,4.55vw,4.72rem)!important;
+    line-height:.96!important;
+    max-width:620px!important;
+  }
+  .hero-copy .lead{
+    font-size:.98rem!important;
+    line-height:1.53!important;
+    max-width:560px!important;
+    margin:0 0 16px!important;
+    color:rgba(255,255,255,.80)!important;
+  }
+  html[lang="ru"] .hero-copy .lead{font-size:.94rem!important;line-height:1.48!important;max-width:570px!important}
+  html[lang="en"] .hero-copy .lead{font-size:.94rem!important;line-height:1.48!important;max-width:540px!important}
+  .hero-actions{margin-top:0!important;gap:10px!important;flex-wrap:wrap!important}
+  .btn{min-height:42px!important;padding:0 17px!important;font-size:.86rem!important;white-space:nowrap!important}
+  .trust-row{margin-top:12px!important;gap:6px!important;display:flex!important;flex-wrap:wrap!important;max-height:36px!important;overflow:hidden!important}
+  .trust-row li{font-size:.70rem!important;line-height:1!important;padding:7px 9px!important;white-space:nowrap!important}
+  html[lang="ru"] .trust-row li{font-size:.66rem!important;padding-inline:8px!important}
+  .hero-visual{padding:26px!important}
+  .browser-card{width:71%!important;min-height:238px!important;padding:18px!important;border-radius:26px!important}
+  .site-preview{min-height:168px!important;padding:18px!important;border-radius:20px!important}
+  .preview-title{height:13px!important}.preview-line{height:11px!important}.preview-grid span{height:38px!important}.publish-status{font-size:.74rem!important;padding:8px 11px!important}
+  .hero .metric-card{
+    min-height:88px!important;
+    padding:17px 18px!important;
+    border-radius:22px!important;
+    justify-content:center!important;
+  }
+  .hero .metric-card span{font-size:.70rem!important;line-height:1.1!important;margin-bottom:6px!important;color:rgba(12,14,17,.54)!important}
+  .hero .metric-card strong{font-size:1.0rem!important;line-height:1.16!important;letter-spacing:-.012em!important}
+  html[lang="ru"] .hero .metric-card strong{font-size:.93rem!important;line-height:1.15!important}
+  html[lang="en"] .hero .metric-card strong{font-size:.91rem!important;line-height:1.14!important}
+  html[dir="rtl"] .hero .metric-card{text-align:right!important;align-items:flex-start!important}
+  html[dir="ltr"] .hero .metric-card{text-align:left!important;align-items:flex-start!important}
+  .section:not(.hero){scroll-margin-top:112px!important}
+}
+@media (min-width:1081px) and (max-width:1220px){
+  .hero.section{max-width:1040px!important;padding:26px!important}
+  .hero-copy,.hero-visual{height:390px!important;min-height:390px!important}
+  .hero-copy h1{font-size:clamp(2.75rem,3.9vw,3.75rem)!important}
+  html[lang="ru"] .hero-copy h1{font-size:clamp(2.42rem,3.28vw,3.35rem)!important}
+  html[lang="en"] .hero-copy h1{font-size:clamp(2.52rem,3.42vw,3.5rem)!important}
+  html[lang="he"] .hero-copy h1{font-size:clamp(2.95rem,4.1vw,3.95rem)!important}
+  .hero-copy .lead{font-size:.90rem!important;line-height:1.45!important}
+  .btn{font-size:.80rem!important;padding-inline:14px!important}
+  .trust-row{display:none!important}
+  .browser-card{width:74%!important;min-height:218px!important}.site-preview{min-height:150px!important}.preview-grid span{height:32px!important}
+}
+@media (max-width:1080px){
+  main{padding-top:92px!important}
+  .hero.section{margin-top:12px!important;overflow:visible!important}
+  .hero-copy{overflow:hidden!important;justify-content:flex-start!important}
+  html[lang="ru"] .hero-copy h1{font-size:clamp(2.05rem,8.6vw,3rem)!important;line-height:1.04!important}
+  html[lang="en"] .hero-copy h1{font-size:clamp(2.16rem,8.8vw,3.16rem)!important;line-height:1.03!important}
+}
+
+
+/* Hero viewport balance: keep nav-safe spacing while fitting the premium stage into 1280x720 */
+@media (min-width:1081px){
+  main{padding-top:94px!important}
+  .hero.section{margin-top:9px!important}
+}
+@media (min-width:1081px) and (max-height:760px){
+  main{padding-top:90px!important}
+  .hero.section{padding-top:24px!important;padding-bottom:24px!important;gap:16px!important}
+  .hero-copy,.hero-visual{height:394px!important;min-height:394px!important}
+  .hero-copy{padding-top:27px!important;padding-bottom:25px!important}
+  .hero-copy h1{margin-bottom:14px!important}
+  .hero-copy .lead{margin-bottom:14px!important}
+  .hero .metric-card{min-height:82px!important;padding-top:15px!important;padding-bottom:15px!important}
+}
