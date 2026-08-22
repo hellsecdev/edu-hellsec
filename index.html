@@ -3,27 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HellSec Edu — פיתוח אתרים עם AI לתלמידי תיכון</title>
-  <meta name="description" content="תוכנית מעשית לבתי ספר: תלמידי תיכון לומדים להשתמש ב־AI בצורה אחראית, לבנות אתר אישי, לשמור קוד ב־GitHub ולפרסם אותו באמצעות GitHub Pages." />
+  <title>HellSec Edu | תוכנית AI ופיתוח אתרים לתלמידי תיכון</title>
+  <meta name="description" content="תוכנית מעשית לבתי ספר תיכוניים: תלמידים לומדים לעבוד עם AI בצורה אחראית, בונים אתר אישי, שומרים קוד ב-GitHub ומפרסמים אותו ב-GitHub Pages." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://edu.hellsec.dev/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="he_IL" />
-  <meta property="og:title" content="HellSec Edu — פיתוח אתרים עם AI לתלמידי תיכון" />
-  <meta property="og:description" content="הצעת תוכנית לבתי ספר: AI, פיתוח Web, GitHub ו־GitHub Pages דרך פרויקט אישי לכל תלמיד." />
+  <meta property="og:site_name" content="HellSec Edu" />
+  <meta property="og:title" content="HellSec Edu | תוכנית AI ופיתוח אתרים לתלמידי תיכון" />
+  <meta property="og:description" content="פיילוט או קורס קצר לבית ספר: כל תלמיד יוצא עם אתר אישי, קוד מסודר וקישור ציבורי להצגה." />
   <meta property="og:image" content="https://edu.hellsec.dev/assets/ai-school-banner.png" />
   <meta property="og:url" content="https://edu.hellsec.dev/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#f4f3ef" />
+  <meta name="theme-color" content="#f6f4ee" />
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
-  <link rel="stylesheet" href="styles.css?v=light3" />
+  <link rel="stylesheet" href="styles.css?v=edu-premium-20260822" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOccupationalProgram",
-    "name": "HellSec Edu — פיתוח אתרים עם AI לתלמידי תיכון",
-    "description": "תוכנית מעשית לבתי ספר שבה תלמידי תיכון לומדים להשתמש ב-AI בצורה אחראית, לבנות אתר אישי, לשמור קוד ב-GitHub ולפרסם באמצעות GitHub Pages.",
+    "name": "HellSec Edu | תוכנית AI ופיתוח אתרים לתלמידי תיכון",
+    "description": "תוכנית מעשית לבתי ספר תיכוניים שבה תלמידים לומדים להשתמש ב-AI בצורה אחראית, לבנות אתר אישי, לשמור קוד ב-GitHub ולפרסם באמצעות GitHub Pages.",
     "provider": {
       "@type": "Organization",
       "name": "HellSec",
@@ -31,130 +32,197 @@
       "logo": "https://edu.hellsec.dev/assets/favicon.png",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+972547999309",
-        "contactType": "program inquiries",
+        "telephone": "+972-54-799-9309",
+        "contactType": "school program inquiries",
         "availableLanguage": ["he", "ru", "en"]
       }
     },
     "instructor": {
       "@type": "Person",
       "name": "ולדימיר ברסון",
-      "image": "https://edu.hellsec.dev/assets/vladimir-berson.jpg"
+      "image": "https://edu.hellsec.dev/assets/vladimir-berson.jpg",
+      "jobTitle": "AI, cyber and software educator"
     },
     "url": "https://edu.hellsec.dev/",
     "inLanguage": "he-IL",
     "educationalLevel": "High school",
-    "teaches": ["AI", "Web development", "HTML", "CSS", "JavaScript", "GitHub", "GitHub Pages"]
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student"
+    },
+    "teaches": ["AI literacy", "Web development", "HTML", "CSS", "JavaScript", "GitHub", "GitHub Pages", "responsible AI use"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"האם התוכנית מתאימה לתלמידים ללא ניסיון בתכנות?","acceptedAnswer":{"@type":"Answer","text":"כן. התוכנית מתחילה מרעיון ומבנה עמוד, ואז מתקדמת בהדרגה ל-HTML, CSS, תיקון שגיאות ופרסום ב-GitHub Pages."}},
+      {"@type":"Question","name":"האם התלמידים משתמשים ב-AI במקום ללמוד?","acceptedAnswer":{"@type":"Answer","text":"לא. AI משמש ככלי עבודה. התלמידים לומדים לבדוק, להבין, לשפר ולהסביר את מה שהם בונים."}},
+      {"@type":"Question","name":"מה בית הספר צריך להכין?","acceptedAnswer":{"@type":"Answer","text":"כיתה עם מחשבים, אינטרנט יציב, מקרן, אישור שימוש בכלים הנבחרים ואיש קשר מטעם בית הספר."}},
+      {"@type":"Question","name":"האם אפשר להתחיל בלי קורס מלא?","acceptedAnswer":{"@type":"Answer","text":"כן. מומלץ להתחיל בפיילוט קצר לקבוצה אחת, לראות תוצרים ולקבל החלטה אם להרחיב."}}
+    ]
   }
   </script>
 </head>
 <body>
-  <div class="top-strip">תוכנית AI מעשית לבתי ספר · פיילוט לקבוצה אחת · מסמך מלא זמין</div>
+  <a class="skip-link" href="#main">דילוג לתוכן</a>
+  <div class="top-strip">תוכנית AI מעשית לבתי ספר · פיילוט לקבוצה אחת · ללא התחייבות לקורס מלא</div>
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="ניווט ראשי">
       <a class="brand" href="#top" aria-label="HellSec Edu">
-        <img src="assets/hellsec-logo.png" alt="" class="brand-logo" width="42" height="42" style="width:42px;height:42px;max-width:42px;object-fit:contain" />
+        <img src="assets/hellsec-logo.png" alt="" class="brand-logo" width="42" height="42" />
         <span><strong>HellSec</strong> Edu</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">תפריט</button>
       <div class="nav-links" id="nav-links">
         <a href="#why">למה עכשיו</a>
-        <a href="#outcome">תוצרים</a>
-        <a href="#program">מבנה התוכנית</a>
+        <a href="#outcome">תוצר</a>
+        <a href="#lesson">מה קורה בשיעור</a>
+        <a href="#program">פורמטים</a>
+        <a href="#safety">בטיחות</a>
         <a href="#faq">שאלות</a>
-        <a href="#instructor">מנחה</a>
-        <a class="nav-cta" href="https://wa.me/972547999309?text=%D7%94%D7%99%D7%99%20%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20HellSec%20Edu%20%D7%9C%D7%91%D7%99%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="nav-cta" href="https://wa.me/972547999309?text=%D7%94%D7%99%D7%99%20%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20AI%20%D7%95%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%90%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%91%D7%99%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section hero-grid">
-      <div class="hero-card black reveal">
-        <p class="label">הצעת תוכנית לבית ספר</p>
-        <h1>פיתוח אתרים עם AI לתלמידי תיכון</h1>
-        <p class="lead">תוכנית מעשית לכיתות י׳–י״ב: תלמידים בונים אתר אישי, שומרים קוד ב־GitHub ומפרסמים אותו באמצעות GitHub Pages.</p>
+  <main id="main">
+    <section class="hero section hero-grid" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="label">הצעה לבית ספר תיכון</p>
+        <h1 id="hero-title">תלמידים בונים אתר אמיתי עם AI, קוד ו-GitHub</h1>
+        <p class="lead">תוכנית קצרה ומעשית לכיתות י׳ עד י״ב. כל תלמיד עובר מרעיון ראשוני לאתר אישי באינטרנט, עם הבנה בסיסית של HTML, CSS, עבודה אחראית עם AI ופרסום ב-GitHub Pages.</p>
         <div class="hero-actions">
-          <a class="btn lime" href="https://wa.me/972547999309?text=%D7%94%D7%99%D7%99%20%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20HellSec%20Edu%20%D7%9C%D7%91%D7%99%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">תיאום שיחה ב־WhatsApp</a>
-          <a class="btn dark" href="https://docs.google.com/document/d/1EJTKP4n1wqWLeG4x6o3fUcMZ7uQS6Tdynhmcd4_edeU/edit" target="_blank" rel="noopener">פתיחת מסמך התוכנית</a>
+          <a class="btn primary" href="https://wa.me/972547999309?text=%D7%94%D7%99%D7%99%20%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20AI%20%D7%95%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%90%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%91%D7%99%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">תיאום שיחת היכרות</a>
+          <a class="btn secondary" href="https://docs.google.com/document/d/1EJTKP4n1wqWLeG4x6o3fUcMZ7uQS6Tdynhmcd4_edeU/edit" target="_blank" rel="noopener">פתיחת מסמך התוכנית</a>
         </div>
+        <ul class="trust-row" aria-label="עיקרי התוכנית">
+          <li>פיילוט 2 עד 3 שעות</li>
+          <li>קורס 4 או 8 מפגשים</li>
+          <li>תוצר ציבורי לכל תלמיד</li>
+        </ul>
       </div>
 
-      <div class="hero-card visual-card reveal" aria-label="המחשת למידה עם AI וקוד">
-        <div class="screen-card">
-          <div class="screen-top"><span></span><span></span><span></span></div>
-          <div class="code-line wide"></div>
-          <div class="code-line mid"></div>
-          <div class="code-line short"></div>
-          <div class="publish-pill">Project Published</div>
+      <div class="hero-visual reveal" aria-label="המחשת פרויקט תלמיד">
+        <div class="browser-card">
+          <div class="browser-top"><span></span><span></span><span></span><b>student-site</b></div>
+          <div class="site-preview">
+            <div class="avatar-dot">AI</div>
+            <div class="preview-title"></div>
+            <div class="preview-line wide"></div>
+            <div class="preview-line mid"></div>
+            <div class="preview-grid"><span></span><span></span><span></span></div>
+          </div>
+          <div class="publish-status">Published on GitHub Pages</div>
         </div>
-        <div class="float-chip chip-ai">AI</div>
-        <div class="float-chip chip-code">HTML · CSS · JS</div>
-        <div class="float-chip chip-git">GitHub Pages</div>
+        <div class="floating-tag tag-code">HTML · CSS · JS</div>
+        <div class="floating-tag tag-ai">AI כעוזר למידה</div>
+        <div class="floating-tag tag-github">GitHub</div>
       </div>
 
-      <article class="mini-card reveal"><span>תוצר</span><strong>אתר אישי לכל תלמיד</strong></article>
-      <article class="mini-card accent reveal"><span>מומלץ להתחלה</span><strong>פיילוט חד־פעמי</strong></article>
-      <article class="mini-card reveal"><span>כלים</span><strong>AI · GitHub · Web</strong></article>
-      <article class="mini-card reveal"><span>אחריות</span><strong>למידה בטוחה ומבוקרת</strong></article>
+      <article class="metric-card reveal"><span>תוצר</span><strong>אתר אישי וקישור להצגה</strong></article>
+      <article class="metric-card highlight reveal"><span>התחלה מומלצת</span><strong>פיילוט לקבוצה אחת</strong></article>
+      <article class="metric-card reveal"><span>קהל יעד</span><strong>כיתות י׳ עד י״ב</strong></article>
+      <article class="metric-card reveal"><span>דגש</span><strong>AI אחראי, לא העתקה</strong></article>
     </section>
 
     <section class="section two-col" id="why">
-      <div class="copy-block reveal">
-        <p class="label green">למה זה חשוב</p>
-        <h2>AI כבר משנה את הדרך שבה תלמידים לומדים, יוצרים ומציגים רעיונות</h2>
+      <div class="section-copy reveal">
+        <p class="label green">למה עכשיו</p>
+        <h2>AI כבר נמצא אצל תלמידים. לבית הספר יש הזדמנות ללמד שימוש נכון.</h2>
       </div>
-      <div class="soft-panel reveal">
-        <p>האתגר של בית הספר הוא לא רק “להראות לתלמידים AI”, אלא ללמד אותם להשתמש בו נכון: לחשוב, לבדוק, להבין, לבנות ולהציג תוצר אמיתי.</p>
+      <div class="panel soft reveal">
+        <p>המטרה היא לא להרשים בסיסמאות על AI. המטרה היא לתת לתלמידים מסגרת: איך שואלים, איך בודקים תשובה, איך מבינים קוד, איך מתקנים שגיאות ואיך מציגים תוצר שאפשר לעמוד מאחוריו.</p>
       </div>
     </section>
 
-    <section class="section cards-section">
-      <div class="section-head reveal"><p class="label green">מה בית הספר מקבל</p><h2>תוכנית קצרה, ברורה ומעשית</h2></div>
+    <section class="section cards-section" aria-labelledby="school-gets-title">
+      <div class="section-head reveal">
+        <p class="label green">מה בית הספר מקבל</p>
+        <h2 id="school-gets-title">תוכנית שקל להתחיל איתה וקשה להשאיר רק כהרצאה.</h2>
+      </div>
       <div class="card-grid four">
-        <article class="white-card reveal"><h3>חדשנות חינוכית</h3><p>תוכנית רלוונטית לעולם העבודה העתידי, במבנה שקל להסביר להנהלה ולהורים.</p></article>
-        <article class="white-card reveal"><h3>למידה דרך עשייה</h3><p>התלמידים לא רק שומעים על AI. הם בונים, מתקנים, משפרים ומציגים.</p></article>
-        <article class="white-card reveal"><h3>תוצר שאפשר לראות</h3><p>כל תלמיד מסיים עם אתר וקישור ציבורי שניתן להציג.</p></article>
-        <article class="white-card reveal"><h3>כניסה הדרגתית</h3><p>אפשר להתחיל בפיילוט לקבוצה אחת ואז להחליט אם להרחיב.</p></article>
+        <article class="white-card reveal"><h3>חדשנות עם תוצר</h3><p>לא עוד הרצאה על עתיד העבודה. התלמידים יוצרים משהו שאפשר לפתוח, לבדוק ולהציג.</p></article>
+        <article class="white-card reveal"><h3>למידה פעילה</h3><p>כל שיעור כולל פעולה: כתיבה, בדיקה, תיקון, שיפור והצגה קצרה של ההתקדמות.</p></article>
+        <article class="white-card reveal"><h3>פיילוט נמוך סיכון</h3><p>אפשר להתחיל בקבוצה אחת, ללמוד מה עובד בבית הספר ורק אז להחליט על הרחבה.</p></article>
+        <article class="white-card reveal"><h3>שפה להנהלה ולהורים</h3><p>התוכנית מדגישה אחריות, פרטיות, חשיבה ביקורתית ומיומנות דיגיטלית מעשית.</p></article>
       </div>
     </section>
 
-    <section class="section outcome-block" id="outcome">
+    <section class="section fit-section" aria-labelledby="fit-title">
+      <div class="fit-card good reveal">
+        <h2 id="fit-title">מתאים במיוחד כאשר</h2>
+        <ul>
+          <li>בית הספר רוצה להתחיל עם AI בצורה מבוקרת ומעשית.</li>
+          <li>יש צורך בתוצר ברור, לא רק פעילות חד-פעמית ללא המשך.</li>
+          <li>התלמידים צריכים ללמוד לעבוד עם כלים אמיתיים של עולם הטכנולוגיה.</li>
+        </ul>
+      </div>
+      <div class="fit-card caution reveal">
+        <h2>פחות מתאים אם</h2>
+        <ul>
+          <li>מחפשים הרצאת השראה בלבד ללא מחשבים וללא עבודה עצמית.</li>
+          <li>אין אישור בית ספרי לשימוש בכלי AI או GitHub.</li>
+          <li>אין זמן לתת לתלמידים לבנות, לטעות, לתקן ולהציג.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section outcome-block" id="outcome" aria-labelledby="outcome-title">
       <div class="dark-panel reveal">
         <p class="label">התוצר הסופי</p>
-        <h2>מרעיון לאתר ציבורי</h2>
-        <div class="pipeline" aria-label="תהליך עבודה">
-          <span>רעיון</span><i></i><span>AI</span><i></i><span>קוד</span><i></i><span>GitHub</span><i></i><span>פרסום</span>
+        <h2 id="outcome-title">מרעיון לאתר ציבורי</h2>
+        <div class="pipeline" aria-label="תהליך העבודה">
+          <span>רעיון</span><i></i><span>בקשת AI</span><i></i><span>קוד</span><i></i><span>GitHub</span><i></i><span>פרסום</span>
         </div>
       </div>
       <div class="yellow-card reveal">
         <span>בסוף הפעילות</span>
-        <strong>לכל תלמיד יש אתר אישי, קוד מסודר וקישור שאפשר להציג.</strong>
+        <strong>לכל תלמיד יש אתר אישי, קוד מסודר, קישור ציבורי והסבר קצר על מה שבנה.</strong>
       </div>
     </section>
 
-    <section class="section skills-section">
+    <section class="section skills-section" aria-labelledby="skills-title">
       <div class="skills-panel reveal">
         <div>
           <p class="label green">מיומנויות</p>
-          <h2>התלמידים מקבלים את הבסיס המעשי לעבודה עם AI ופיתוח Web</h2>
+          <h2 id="skills-title">התלמידים מקבלים בסיס מעשי לעבודה עם AI ופיתוח Web.</h2>
+          <p>הדגש הוא לא להפוך כל תלמיד למתכנת ביום אחד, אלא לתת לו ביטחון, שפה וכלים להתחיל לבנות.</p>
         </div>
         <ul class="skills-list">
-          <li>ניסוח בקשות ברורות ל־AI</li>
-          <li>HTML בסיסי ומבנה עמוד</li>
-          <li>CSS, צבעים, כרטיסיות והתאמה למובייל</li>
+          <li>ניסוח בקשות ברורות ל-AI</li>
+          <li>HTML ומבנה עמוד</li>
+          <li>CSS, צבעים, כרטיסים והתאמה למובייל</li>
           <li>JavaScript לפעולה קטנה באתר</li>
           <li>בדיקה ותיקון שגיאות</li>
-          <li>שמירת קוד ב־GitHub</li>
-          <li>פרסום ב־GitHub Pages</li>
+          <li>שמירת קוד ב-GitHub</li>
+          <li>פרסום ב-GitHub Pages</li>
           <li>הצגת התוצר והסבר העבודה</li>
         </ul>
       </div>
     </section>
 
-    <section class="section project-examples" id="examples">
-      <div class="section-head reveal"><p class="label green">תוצרים לדוגמה</p><h2>איזה פרויקטים תלמידים יכולים לבנות?</h2></div>
+    <section class="section lesson" id="lesson" aria-labelledby="lesson-title">
+      <div class="section-head reveal">
+        <p class="label green">מה קורה בשיעור</p>
+        <h2 id="lesson-title">שיעור טוב משאיר התקדמות נראית לעין.</h2>
+      </div>
+      <div class="lesson-grid">
+        <article class="lesson-card reveal"><span>01</span><h3>מגדירים רעיון</h3><p>התלמיד בוחר נושא לאתר ומנסח מה האתר צריך להסביר.</p></article>
+        <article class="lesson-card reveal"><span>02</span><h3>עובדים עם AI</h3><p>כותבים בקשה, מקבלים כיוון, בודקים את התשובה ומשפרים אותה.</p></article>
+        <article class="lesson-card reveal"><span>03</span><h3>בונים ומתקנים</h3><p>עובדים עם HTML ו-CSS, רואים תוצאה בדפדפן ומתקנים שגיאות.</p></article>
+        <article class="lesson-card reveal"><span>04</span><h3>מפרסמים ומציגים</h3><p>שומרים ב-GitHub, מפרסמים ב-Pages ומציגים את הקישור.</p></article>
+      </div>
+    </section>
+
+    <section class="section project-examples" id="examples" aria-labelledby="examples-title">
+      <div class="section-head reveal">
+        <p class="label green">תוצרים לדוגמה</p>
+        <h2 id="examples-title">איזה פרויקטים תלמידים יכולים לבנות?</h2>
+      </div>
       <div class="example-grid">
         <article class="example-card reveal"><span>01</span><h3>אתר אישי</h3><p>עמוד אישי להצגת תחומי עניין, מיומנויות, תמונות וקישורים.</p></article>
         <article class="example-card reveal"><span>02</span><h3>אתר לפרויקט חברתי</h3><p>הצגת בעיה, פתרון, קהל יעד וקריאה לפעולה.</p></article>
@@ -162,54 +230,64 @@
       </div>
     </section>
 
-    <section class="section program" id="program">
-      <div class="section-head reveal"><p class="label green">מבנה התוכנית</p><h2>שלושה פורמטים לבחירה</h2></div>
+    <section class="section program" id="program" aria-labelledby="program-title">
+      <div class="section-head reveal">
+        <p class="label green">מבנה התוכנית</p>
+        <h2 id="program-title">שלושה פורמטים לבחירה</h2>
+      </div>
       <div class="plans">
-        <article class="plan-card featured reveal"><span>אפשרות א׳</span><h3>סדנת פיילוט חד־פעמית</h3><strong>2–3 שעות</strong><p>מתאים לבית ספר שרוצה לבדוק את התוכנית בצורה קצרה ומעשית.</p><ul><li>היכרות עם AI ופיתוח</li><li>בניית דף אישי בסיסי</li><li>היכרות עם GitHub Pages</li></ul></article>
-        <article class="plan-card reveal"><span>אפשרות ב׳</span><h3>קורס קצר</h3><strong>4 מפגשים</strong><p>מתאים לקבוצה שרוצה להגיע לתוצר אישי ברור בזמן קצר.</p><ul><li>AI ורעיון לפרויקט</li><li>HTML + CSS</li><li>שיפור ותיקון עם AI</li><li>פרסום והצגת תוצרים</li></ul></article>
-        <article class="plan-card reveal"><span>אפשרות ג׳</span><h3>קורס מלא</h3><strong>8 מפגשים</strong><p>מתאים לבית ספר שרוצה תהליך עמוק יותר ותוצרים איכותיים יותר.</p><ul><li>HTML, CSS ו־JavaScript</li><li>בקשות נכונות ועבודה עם AI</li><li>GitHub ו־GitHub Pages</li><li>בדיקה, שיפור והצגת פרויקטים</li></ul></article>
+        <article class="plan-card featured reveal"><span>אפשרות א׳</span><h3>סדנת פיילוט חד-פעמית</h3><strong>2 עד 3 שעות</strong><p>מתאים לבית ספר שרוצה לבדוק התאמה לקבוצה אחת בצורה קצרה ומעשית.</p><ul><li>היכרות עם AI ופיתוח</li><li>בניית דף אישי בסיסי</li><li>פרסום ראשון ב-GitHub Pages</li></ul></article>
+        <article class="plan-card reveal"><span>אפשרות ב׳</span><h3>קורס קצר</h3><strong>4 מפגשים</strong><p>מתאים לקבוצה שרוצה להגיע לתוצר אישי ברור בזמן קצר.</p><ul><li>AI ורעיון לפרויקט</li><li>HTML ו-CSS</li><li>שיפור ותיקון עם AI</li><li>פרסום והצגת תוצרים</li></ul></article>
+        <article class="plan-card reveal"><span>אפשרות ג׳</span><h3>קורס מלא</h3><strong>8 מפגשים</strong><p>מתאים לבית ספר שרוצה תהליך עמוק יותר ותוצרים איכותיים יותר.</p><ul><li>HTML, CSS ו-JavaScript</li><li>עבודה נכונה עם AI</li><li>GitHub ו-GitHub Pages</li><li>בדיקה, שיפור והצגת פרויקטים</li></ul></article>
       </div>
     </section>
 
-    <section class="section safety">
-      <div class="section-head reveal"><p class="label green">אחריות ובטיחות</p><h2>AI ככלי למידה, לא תחליף לחשיבה</h2></div>
+    <section class="section safety" id="safety" aria-labelledby="safety-title">
+      <div class="section-head reveal">
+        <p class="label green">אחריות ובטיחות</p>
+        <h2 id="safety-title">AI ככלי למידה, לא תחליף לחשיבה.</h2>
+      </div>
       <div class="safety-grid">
-        <article class="white-card reveal"><h3>פרטיות</h3><p>לא מפרסמים מידע אישי רגיש של תלמידים.</p></article>
-        <article class="white-card reveal"><h3>מדיניות בית הספר</h3><p>שימוש ב־GitHub ובכלי AI לפי אישור וכללי בית הספר.</p></article>
-        <article class="white-card reveal"><h3>חשיבה ביקורתית</h3><p>התלמידים לומדים לבדוק את תשובות ה־AI ולא להסתמך עליהן באופן עיוור.</p></article>
+        <article class="white-card reveal"><h3>פרטיות תלמידים</h3><p>לא מפרסמים מידע אישי רגיש. דוגמאות, תמונות ותכנים נבחרים לפי מדיניות בית הספר.</p></article>
+        <article class="white-card reveal"><h3>מדיניות בית הספר</h3><p>שימוש ב-GitHub ובכלי AI נעשה רק לפי אישור וכללים ברורים של בית הספר.</p></article>
+        <article class="white-card reveal"><h3>חשיבה ביקורתית</h3><p>התלמידים לומדים לבדוק תשובות של AI, להבין מה השתנה ולא להגיש עבודה שאינם יודעים להסביר.</p></article>
+        <article class="white-card reveal"><h3>פיקוח והדרכה</h3><p>העבודה מתבצעת במסגרת מונחית, עם מטרות ברורות ותוצר שמתאים לרמת הכיתה.</p></article>
       </div>
     </section>
 
-    <section class="section instructor" id="instructor">
+    <section class="section instructor" id="instructor" aria-labelledby="instructor-title">
       <div class="instructor-panel reveal">
         <div class="portrait-wrap"><img src="assets/vladimir-berson.jpg" alt="ולדימיר ברסון" width="160" height="160" class="instructor-portrait" /></div>
         <div>
           <p class="label green">מנחה התוכנית</p>
-          <h2>ולדימיר ברסון</h2>
-          <p>איש טכנולוגיה, פיתוח תוכנה, AI, סייבר ואוטומציה עסקית. התוכנית מועברת בגישה מעשית: מהרעיון הראשוני, דרך כתיבת הקוד והבנתו, ועד פרסום התוצר באינטרנט.</p>
-          <p>הדגש הוא על שימוש אחראי ב־AI, הבנה אמיתית של העבודה ותוצר שכל תלמיד יכול לפרסם ולהציג.</p>
+          <h2 id="instructor-title">ולדימיר ברסון</h2>
+          <p>איש טכנולוגיה, פיתוח תוכנה, AI, סייבר ואוטומציה עסקית. התוכנית מועברת בגישה מעשית: מהרעיון הראשון, דרך כתיבת הקוד והבנתו, ועד פרסום התוצר באינטרנט.</p>
+          <p>הדגש הוא על שימוש אחראי ב-AI, הבנה אמיתית של העבודה ותוצר שכל תלמיד יכול לפרסם ולהציג.</p>
         </div>
       </div>
     </section>
 
-    <section class="section faq" id="faq">
-      <div class="section-head reveal"><p class="label green">שאלות נפוצות</p><h2>מה חשוב לדעת לפני שמתחילים?</h2></div>
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="section-head reveal">
+        <p class="label green">שאלות נפוצות</p>
+        <h2 id="faq-title">מה חשוב לדעת לפני שמתחילים?</h2>
+      </div>
       <div class="faq-grid">
         <details class="faq-item reveal" open><summary>האם התוכנית מתאימה לתלמידים ללא ניסיון בתכנות?</summary><p>כן. התוכנית מתחילה מהבסיס ומובילה את התלמידים שלב אחר שלב: רעיון, מבנה עמוד, עיצוב, תיקון שגיאות ופרסום.</p></details>
-        <details class="faq-item reveal"><summary>האם התלמידים משתמשים ב־AI במקום ללמוד?</summary><p>לא. ה־AI משמש ככלי עזר. הדגש הוא להבין את הקוד, לבדוק תשובות, לתקן שגיאות ולהציג את העבודה במילים של התלמיד.</p></details>
+        <details class="faq-item reveal"><summary>האם התלמידים משתמשים ב-AI במקום ללמוד?</summary><p>לא. AI הוא כלי עזר. הדגש הוא להבין את הקוד, לבדוק תשובות, לתקן שגיאות ולהציג את העבודה במילים של התלמיד.</p></details>
         <details class="faq-item reveal"><summary>מה בית הספר צריך להכין?</summary><p>כיתה עם מחשבים, אינטרנט יציב, מקרן, אישור שימוש בכלי AI/GitHub, רשימת תלמידים ואיש קשר מטעם בית הספר.</p></details>
-        <details class="faq-item reveal"><summary>האם אפשר להתחיל בלי קורס מלא?</summary><p>כן. ההמלצה היא להתחיל בפיילוט חד־פעמי לקבוצה אחת, לראות תוצרים ולקבל החלטה אם להמשיך לקורס קצר או מלא.</p></details>
+        <details class="faq-item reveal"><summary>האם אפשר להתחיל בלי קורס מלא?</summary><p>כן. ההמלצה היא להתחיל בפיילוט חד-פעמי לקבוצה אחת, לראות תוצרים ולקבל החלטה אם להמשיך לקורס קצר או מלא.</p></details>
       </div>
     </section>
 
-    <section class="section final-cta">
+    <section class="section final-cta" aria-labelledby="cta-title">
       <div class="cta-panel reveal">
         <p class="label">השלב הבא</p>
-        <h2>רוצים לבדוק את התוכנית בבית הספר?</h2>
-        <p>אפשר להתחיל משיחת היכרות קצרה ב־WhatsApp, להבין את הצורך של בית הספר, ואז לשלוח את מסמך התוכנית המלא.</p>
+        <h2 id="cta-title">רוצים לבדוק את התוכנית בבית הספר?</h2>
+        <p>אפשר להתחיל משיחת היכרות קצרה ב-WhatsApp, להבין את הצורך של בית הספר ואז לשלוח את מסמך התוכנית המלא.</p>
         <div class="hero-actions center">
-          <a class="btn lime" href="https://wa.me/972547999309?text=%D7%94%D7%99%D7%99%20%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20HellSec%20Edu%20%D7%9C%D7%91%D7%99%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">שליחת WhatsApp</a>
-          <a class="btn dark" href="https://docs.google.com/document/d/1EJTKP4n1wqWLeG4x6o3fUcMZ7uQS6Tdynhmcd4_edeU/edit" target="_blank" rel="noopener">צפייה במסמך המלא</a>
+          <a class="btn primary" href="https://wa.me/972547999309?text=%D7%94%D7%99%D7%99%20%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20AI%20%D7%95%D7%A4%D7%99%D7%AA%D7%95%D7%97%20%D7%90%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%91%D7%99%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">שליחת WhatsApp</a>
+          <a class="btn secondary dark-on" href="https://docs.google.com/document/d/1EJTKP4n1wqWLeG4x6o3fUcMZ7uQS6Tdynhmcd4_edeU/edit" target="_blank" rel="noopener">צפייה במסמך המלא</a>
         </div>
         <p class="contact-note">WhatsApp: +972 54-799-9309</p>
       </div>
@@ -220,6 +298,6 @@
     <p>HellSec Edu · פיתוח אתרים עם AI לתלמידי תיכון</p>
     <a href="#top">חזרה למעלה</a>
   </footer>
-  <script src="script.js?v=light3"></script>
+  <script src="script.js?v=edu-premium-20260822"></script>
 </body>
 </html>
