@@ -42,3 +42,52 @@ h1,h2,h3,p,strong,li,a,span{overflow-wrap:anywhere}
   .yellow-card strong{font-size:clamp(1.7rem,8.4vw,2.65rem)}
   h2{letter-spacing:-.04em}
 }
+
+
+/* Humanized layout pass: calmer school-facing scale, no AI-template eyebrow lines */
+.label{display:none!important}
+.label:before{display:none!important;content:none!important}
+.section{padding:58px 24px}.hero{padding-top:22px;padding-bottom:34px}.hero-grid{grid-template-columns:1fr 1fr;align-items:start}.hero-copy{min-height:0;padding:38px 42px;justify-content:flex-start;border-radius:34px}.hero-copy:after{width:260px;height:260px;opacity:.75}.hero-visual{min-height:0;height:390px;border-radius:34px;padding:32px}.browser-card{width:68%;min-height:235px;padding:20px}.floating-tag{font-size:.9rem}.trust-row{margin-top:22px}.hero-actions{margin-top:22px}h1{font-size:clamp(2.75rem,4.8vw,5.05rem);line-height:.98;letter-spacing:-.045em;margin-bottom:20px}h2{font-size:clamp(2rem,3.7vw,3.9rem);line-height:1.02;letter-spacing:-.04em;margin-bottom:18px}.lead{font-size:clamp(1.05rem,1.35vw,1.27rem);line-height:1.62;max-width:680px}.two-col{gap:34px}.panel.soft{padding:34px;font-size:1.2rem}.section-head{margin-bottom:30px}.white-card{padding:28px}.fit-card,.dark-panel,.yellow-card,.skills-panel,.instructor-panel,.cta-panel{padding:38px}.yellow-card strong{font-size:clamp(1.85rem,3.2vw,3.25rem);line-height:1.08}.pipeline{margin-top:26px}.skills-panel{gap:30px}.lesson-card,.example-card,.plan-card{padding:30px}.safety{padding-top:58px;padding-bottom:58px}.final-cta{padding-top:30px}.cta-panel{border-radius:34px}.top-strip{padding:8px 18px}.nav{padding:12px 24px}.nav-links{gap:17px}
+@media (max-width:1080px){.hero-grid{grid-template-columns:1fr}.hero-visual{height:360px}.browser-card{width:66%}.section{padding:52px 20px}}
+@media (max-width:820px){.section{padding:46px 18px}.hero{padding-top:16px}.hero-copy{padding:28px;border-radius:28px}.hero-visual{height:300px;border-radius:28px}.browser-card{width:76%;min-height:205px}.panel.soft,.dark-panel,.yellow-card,.skills-panel,.fit-card,.instructor-panel,.cta-panel{padding:26px;border-radius:28px}h1{font-size:clamp(2.35rem,10vw,3.65rem);line-height:1.02}h2{font-size:clamp(1.85rem,8.6vw,2.9rem);line-height:1.07}.lead{font-size:1.02rem}.metric-card{padding:22px}.yellow-card strong{font-size:clamp(1.55rem,7.6vw,2.35rem)}.top-strip{font-size:.78rem}.nav{padding:10px 16px}.nav-links{font-size:.92rem}}
+@media (max-width:440px){.hero-copy{padding:24px}.hero-visual{height:270px}.browser-card{width:82%;padding:16px}.floating-tag{font-size:.72rem}.section{padding-left:14px;padding-right:14px}.trust-row li{font-size:.79rem}.yellow-card strong{font-size:clamp(1.45rem,7vw,2.1rem)}}
+
+/* Compact desktop hero cards */
+@media (min-width:1081px){
+  .hero-grid{grid-template-columns:repeat(4,1fr)}
+  .hero-copy,.hero-visual{grid-column:span 2}
+  .hero-visual{height:350px}
+  .hero-copy{padding:34px 40px}
+  .browser-card{width:62%;min-height:215px}
+  .metric-card{min-height:92px;padding:20px 24px;border-radius:24px}
+  .metric-card strong{font-size:1.18rem}
+  .metric-card span{margin-bottom:7px}
+}
+
+/* Second compact pass: remove decorative hero clutter */
+.floating-tag{display:none!important}
+@media (min-width:1081px){
+  h1{font-size:clamp(2.55rem,4.15vw,4.35rem);line-height:1.01;margin-bottom:16px}
+  .lead{font-size:1.1rem;line-height:1.52;max-width:620px}
+  .hero-copy{padding:30px 36px}
+  .hero-actions{margin-top:18px;gap:12px}
+  .btn{min-height:46px;padding:0 20px}
+  .trust-row{margin-top:16px;gap:8px}
+  .trust-row li{padding:7px 10px;font-size:.82rem}
+  .hero-visual{height:320px}
+  .browser-card{width:58%;min-height:195px;padding:18px}
+  .site-preview{min-height:145px;padding:16px}
+  .publish-status{font-size:.82rem;padding:8px 12px}
+  .preview-grid span{height:34px}
+}
+
+/* Mobile hero density */
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-copy,.hero-visual{grid-column:1 / -1}
+  .hero-visual{height:250px}
+  .metric-card{min-height:88px;padding:18px;border-radius:22px}
+  .metric-card strong{font-size:1.02rem;line-height:1.18}
+  .metric-card span{font-size:.82rem;margin-bottom:6px}
+}
+@media (max-width:440px){.hero-visual{height:235px}.metric-card{padding:16px}}
