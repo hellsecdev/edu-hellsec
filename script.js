@@ -414,11 +414,17 @@ function updateBackToTop() {
   const heroBottom = hero.getBoundingClientRect().bottom + window.scrollY;
   backToTop.classList.toggle('visible', window.scrollY > heroBottom - 120);
 }
+function getPageScrollY() {
+  return window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+}
 function updateFloatingNav() {
-  document.body.classList.toggle('nav-scrolled', window.scrollY > 24);
+  const y = getPageScrollY();
+  document.body.classList.toggle('nav-scrolled', y > 12);
 }
 window.addEventListener('scroll', () => { updateBackToTop(); updateFloatingNav(); }, { passive: true });
+document.addEventListener('scroll', () => { updateBackToTop(); updateFloatingNav(); }, { passive: true });
 window.addEventListener('resize', () => { updateBackToTop(); updateFloatingNav(); });
+requestAnimationFrame(() => { updateBackToTop(); updateFloatingNav(); });
 updateBackToTop();
 updateFloatingNav();
 backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
