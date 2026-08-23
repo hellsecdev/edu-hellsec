@@ -181,6 +181,8 @@ const i18n = {
     'שליחת WhatsApp': 'Написать в WhatsApp',
     'WhatsApp: +972 54 799 9309': 'WhatsApp: +972 54 799 9309',
     'HellSec Edu · סדנאות AI ובניית אתרים לתיכונים': 'HellSec Edu · AI и создание сайтов для школ',
+    'בדיקת התאמה ב WhatsApp': 'Проверить в WhatsApp',
+    '2-3 שעות · קבוצה אחת': '2-3 часа · одна группа',
     'חזרה למעלה': 'Наверх'
   },
   en: {
@@ -331,6 +333,8 @@ const i18n = {
     'שליחת WhatsApp': 'Send WhatsApp',
     'WhatsApp: +972 54 799 9309': 'WhatsApp: +972 54 799 9309',
     'HellSec Edu · סדנאות AI ובניית אתרים לתיכונים': 'HellSec Edu · AI and website building for high schools',
+    'בדיקת התאמה ב WhatsApp': 'Check fit on WhatsApp',
+    '2-3 שעות · קבוצה אחת': '2-3 hours · one group',
     'חזרה למעלה': 'Back to top'
   }
 };
@@ -409,10 +413,13 @@ document.querySelectorAll('.lang-switch button').forEach((languageButton) => {
 
 const backToTop = document.querySelector('.back-to-top');
 const hero = document.querySelector('.hero');
+const mobileStickyCta = document.querySelector('.mobile-sticky-cta');
 function updateBackToTop() {
-  if (!backToTop || !hero) return;
-  const heroBottom = hero.getBoundingClientRect().bottom + window.scrollY;
-  backToTop.classList.toggle('visible', window.scrollY > heroBottom - 120);
+  if (!hero) return;
+  const y = getPageScrollY();
+  const heroBottom = hero.getBoundingClientRect().bottom + y;
+  backToTop?.classList.toggle('visible', y > heroBottom - 120);
+  mobileStickyCta?.classList.toggle('visible', y > 360);
 }
 function getPageScrollY() {
   return window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
